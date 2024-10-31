@@ -49,6 +49,6 @@ CREATE TABLE IF NOT EXISTS AlbumSinger (
 CREATE TABLE IF NOT EXISTS TrackCollection (
 	track_id INTEGER NOT NULL REFERENCES Track(id),
 	collection_id INTEGER NOT NULL REFERENCES Collection(id),
-	CONSTRAINT sa primary key (track_id,collection_id)
+	CONSTRAINT tc primary key (track_id,collection_id)
 	
 );
